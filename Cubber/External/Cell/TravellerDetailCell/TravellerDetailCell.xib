@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TravellerDetailCell" id="KGk-i7-Jjw" customClass="TravellerDetailCell" customModule="Cubber" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKw-tv-X9f">
+                        <rect key="frame" x="8" y="5" width="304" height="34"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_adult" translatesAutoresizingMaskIntoConstraints="NO" id="OGv-M1-cEM">
+                                <rect key="frame" x="0.0" y="4.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="1Av-em-sdo"/>
+                                    <constraint firstAttribute="width" secondItem="OGv-M1-cEM" secondAttribute="height" id="3VG-oH-htV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydt-ft-JFv">
+                                <rect key="frame" x="30" y="0.0" width="254" height="34"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
+                                <color key="textColor" red="0.2274509804" green="0.24313725489999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hCa-29-qZW" customClass="FloatLabelTextField" customModule="Cubber" customModuleProvider="target">
+                                <rect key="frame" x="30" y="0.0" width="254" height="34"/>
+                                <color key="textColor" red="0.23137254900000001" green="0.24313725489999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_right_arrow_s" translatesAutoresizingMaskIntoConstraints="NO" id="wh5-EN-Nrd">
+                                <rect key="frame" x="289" y="9" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wh5-EN-Nrd" secondAttribute="height" id="IQd-va-pAe"/>
+                                    <constraint firstAttribute="height" constant="15" id="k7Y-MC-K02"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wh5-EN-Nrd" firstAttribute="centerY" secondItem="WKw-tv-X9f" secondAttribute="centerY" id="7pY-Y9-Dse"/>
+                            <constraint firstItem="OGv-M1-cEM" firstAttribute="leading" secondItem="WKw-tv-X9f" secondAttribute="leading" id="9eQ-yH-I3Q"/>
+                            <constraint firstItem="wh5-EN-Nrd" firstAttribute="leading" secondItem="hCa-29-qZW" secondAttribute="trailing" constant="5" id="BUo-QZ-19M"/>
+                            <constraint firstItem="hCa-29-qZW" firstAttribute="leading" secondItem="OGv-M1-cEM" secondAttribute="trailing" constant="5" id="Gv0-1L-lSF"/>
+                            <constraint firstItem="wh5-EN-Nrd" firstAttribute="leading" secondItem="ydt-ft-JFv" secondAttribute="trailing" constant="5" id="MDP-0W-45d"/>
+                            <constraint firstAttribute="trailing" secondItem="wh5-EN-Nrd" secondAttribute="trailing" id="Pm3-1F-PSm"/>
+                            <constraint firstItem="ydt-ft-JFv" firstAttribute="leading" secondItem="OGv-M1-cEM" secondAttribute="trailing" constant="5" id="U2Q-aN-Uoi"/>
+                            <constraint firstItem="OGv-M1-cEM" firstAttribute="centerY" secondItem="WKw-tv-X9f" secondAttribute="centerY" id="YCB-zM-dIl"/>
+                            <constraint firstItem="hCa-29-qZW" firstAttribute="top" secondItem="WKw-tv-X9f" secondAttribute="top" id="bi6-cJ-g47"/>
+                            <constraint firstAttribute="bottom" secondItem="hCa-29-qZW" secondAttribute="bottom" id="dq9-0s-SnJ"/>
+                            <constraint firstItem="ydt-ft-JFv" firstAttribute="top" secondItem="WKw-tv-X9f" secondAttribute="top" id="gaz-Ma-UF6"/>
+                            <constraint firstAttribute="bottom" secondItem="ydt-ft-JFv" secondAttribute="bottom" id="lFI-5k-thE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WKw-tv-X9f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Fux-xL-Zam"/>
+                    <constraint firstItem="WKw-tv-X9f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="HUQ-JW-don"/>
+                    <constraint firstAttribute="bottom" secondItem="WKw-tv-X9f" secondAttribute="bottom" constant="5" id="Tpq-54-Imk"/>
+                    <constraint firstAttribute="trailing" secondItem="WKw-tv-X9f" secondAttribute="trailing" constant="8" id="tEv-87-6gB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconTraveller" destination="OGv-M1-cEM" id="NtD-eD-mSB"/>
+                <outlet property="lblTravellerName" destination="ydt-ft-JFv" id="13u-eg-Yop"/>
+                <outlet property="txtTravellerName" destination="hCa-29-qZW" id="Ucv-i9-f1z"/>
+            </connections>
+            <point key="canvasLocation" x="-447" y="33"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_adult" width="128" height="128"/>
+        <image name="icon_right_arrow_s" width="20" height="20"/>
+    </resources>
+</document>

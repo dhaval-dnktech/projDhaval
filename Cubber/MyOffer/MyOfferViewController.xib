@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyOfferViewController" customModule="Cubber" customModuleProvider="target">
+            <connections>
+                <outlet property="_VKPagerView" destination="aZZ-UJ-KXg" id="kEL-ba-sOZ"/>
+                <outlet property="btnComingSoon" destination="AeL-Ys-nKe" id="rex-f6-h6V"/>
+                <outlet property="btnNow" destination="uJm-nU-CEy" id="UVY-ap-HWs"/>
+                <outlet property="view" destination="4er-js-Vzf" id="kT6-Fk-HRX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4er-js-Vzf">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZZ-UJ-KXg" customClass="VKPagerView" customModule="Cubber" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1h-km-TsZ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHz-hd-gQG">
+                                    <rect key="frame" x="10" y="5" width="355" height="40"/>
+                                    <subviews>
+                                        <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hzo-Ns-mo1">
+                                            <rect key="frame" x="5" y="5" width="345" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJm-nU-CEy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="168.5" height="30"/>
+                                                    <color key="backgroundColor" red="0.90588235294117647" green="0.70588235294117641" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                                    <state key="normal" title="Now"/>
+                                                    <state key="selected" title="Now"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="19"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnPrePostpaidAction:" destination="-1" eventType="touchUpInside" id="kxF-Ca-VmV"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeL-Ys-nKe">
+                                                    <rect key="frame" x="176.5" y="0.0" width="168.5" height="30"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                                    <state key="normal" title="Coming Soon">
+                                                        <color key="titleColor" red="0.2274509804" green="0.24313725489999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="selected" title="Coming Soon"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="19"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="btnPrePostpaidAction:" destination="-1" eventType="touchUpInside" id="SCc-lI-14t"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="fiZ-XP-KZk"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="hzo-Ns-mo1" firstAttribute="leading" secondItem="wHz-hd-gQG" secondAttribute="leading" constant="5" id="1x7-9A-Drx"/>
+                                        <constraint firstItem="hzo-Ns-mo1" firstAttribute="top" secondItem="wHz-hd-gQG" secondAttribute="top" constant="5" id="3IO-72-HQO"/>
+                                        <constraint firstAttribute="trailing" secondItem="hzo-Ns-mo1" secondAttribute="trailing" constant="5" id="6P1-KA-UtD"/>
+                                        <constraint firstAttribute="bottom" secondItem="hzo-Ns-mo1" secondAttribute="bottom" constant="5" id="M7W-cP-u8T"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="24"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="wHz-hd-gQG" firstAttribute="leading" secondItem="j1h-km-TsZ" secondAttribute="leading" constant="10" id="83j-2a-TwS"/>
+                                <constraint firstItem="wHz-hd-gQG" firstAttribute="top" secondItem="j1h-km-TsZ" secondAttribute="top" constant="5" id="EKO-xD-qSn"/>
+                                <constraint firstAttribute="bottom" secondItem="wHz-hd-gQG" secondAttribute="bottom" constant="5" id="drt-ZJ-xPJ"/>
+                                <constraint firstAttribute="trailing" secondItem="wHz-hd-gQG" secondAttribute="trailing" constant="10" id="gje-ag-zRt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="aZZ-UJ-KXg" secondAttribute="trailing" id="0HS-6I-L2n"/>
+                        <constraint firstItem="j1h-km-TsZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Xm-RY-7wM"/>
+                        <constraint firstAttribute="trailing" secondItem="j1h-km-TsZ" secondAttribute="trailing" id="JSl-96-d29"/>
+                        <constraint firstItem="aZZ-UJ-KXg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lb7-Bm-Hxm"/>
+                        <constraint firstAttribute="bottom" secondItem="aZZ-UJ-KXg" secondAttribute="bottom" id="U9M-cf-dGb"/>
+                        <constraint firstItem="j1h-km-TsZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ukz-VP-4PO"/>
+                        <constraint firstItem="aZZ-UJ-KXg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xxd-ne-h2Y"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="CUb-Wy-l6R"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vHK-I4-j1M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Ae-2I-CLD"/>
+                <constraint firstItem="vHK-I4-j1M" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="QsR-E0-xdG"/>
+                <constraint firstItem="vHK-I4-j1M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rRa-4t-Wkh"/>
+                <constraint firstItem="vHK-I4-j1M" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="xxV-WW-jcd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vHK-I4-j1M"/>
+        </view>
+    </objects>
+</document>

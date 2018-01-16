@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusListView" customModule="Cubber" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNoBusFound" destination="krx-LK-epQ" id="rg4-9K-IxA"/>
+                <outlet property="tableViewDetail" destination="cmD-hu-QOW" id="54Z-El-OIe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cmD-hu-QOW">
+                    <rect key="frame" x="10" y="0.0" width="355" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pQg-Th-qBZ"/>
+                        <outlet property="delegate" destination="-1" id="nuU-Mm-dND"/>
+                    </connections>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bus Found." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krx-LK-epQ">
+                    <rect key="frame" x="10" y="0.0" width="355" height="667"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="krx-LK-epQ" secondAttribute="bottom" id="2kd-Pe-OyQ"/>
+                <constraint firstAttribute="trailing" secondItem="cmD-hu-QOW" secondAttribute="trailing" constant="10" id="Lb0-4h-OYJ"/>
+                <constraint firstItem="krx-LK-epQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UFO-57-GWJ"/>
+                <constraint firstItem="krx-LK-epQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="YYP-gh-aK3"/>
+                <constraint firstItem="cmD-hu-QOW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="n45-d5-dNM"/>
+                <constraint firstAttribute="bottom" secondItem="cmD-hu-QOW" secondAttribute="bottom" id="qTy-Mf-tfr"/>
+                <constraint firstAttribute="trailing" secondItem="krx-LK-epQ" secondAttribute="trailing" constant="10" id="qwA-37-iZz"/>
+                <constraint firstItem="cmD-hu-QOW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="rFa-32-7WD"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

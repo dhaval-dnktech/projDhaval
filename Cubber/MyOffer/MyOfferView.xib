@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyOfferView" customModule="Cubber" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNoDataFound" destination="MqZ-ON-sJO" id="2WS-pa-Wk3"/>
+                <outlet property="tableViewOffer" destination="Nu5-rq-rO2" id="8bS-6w-Gzq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4p-A7-9Bx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Offers Available." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqZ-ON-sJO">
+                            <rect key="frame" x="112" y="323" width="150.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nu5-rq-rO2">
+                            <rect key="frame" x="5" y="0.0" width="365" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="yI9-O7-OK4"/>
+                                <outlet property="delegate" destination="-1" id="81k-im-cHA"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="MqZ-ON-sJO" firstAttribute="centerX" secondItem="P4p-A7-9Bx" secondAttribute="centerX" id="8NC-9s-30Y"/>
+                        <constraint firstItem="Nu5-rq-rO2" firstAttribute="top" secondItem="P4p-A7-9Bx" secondAttribute="top" id="8x9-6C-lG4"/>
+                        <constraint firstItem="Nu5-rq-rO2" firstAttribute="leading" secondItem="P4p-A7-9Bx" secondAttribute="leading" constant="5" id="U58-qt-jSS"/>
+                        <constraint firstAttribute="trailing" secondItem="Nu5-rq-rO2" secondAttribute="trailing" constant="5" id="UwU-aW-ZYq"/>
+                        <constraint firstItem="MqZ-ON-sJO" firstAttribute="centerY" secondItem="P4p-A7-9Bx" secondAttribute="centerY" id="q11-cR-3hr"/>
+                        <constraint firstAttribute="bottom" secondItem="Nu5-rq-rO2" secondAttribute="bottom" id="tyA-0I-8dS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="P4p-A7-9Bx" secondAttribute="bottom" id="13b-hY-Bgo"/>
+                <constraint firstAttribute="trailing" secondItem="P4p-A7-9Bx" secondAttribute="trailing" id="fC2-O7-MAh"/>
+                <constraint firstItem="P4p-A7-9Bx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="i1s-6d-sXg"/>
+                <constraint firstItem="P4p-A7-9Bx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wb3-Hm-ARb"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

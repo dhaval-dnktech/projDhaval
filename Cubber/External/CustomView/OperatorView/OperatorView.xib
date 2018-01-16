@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OperatorView" customModule="Cubber" customModuleProvider="target">
+            <connections>
+                <outlet property="constraintViewBGTopToSuperview" destination="LGz-zj-rOU" id="6Ai-PX-9Wd"/>
+                <outlet property="tableViewOperator" destination="n82-l4-Sc6" id="HnG-Lb-5RH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEy-3Y-0eZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hku-V2-1Uh">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04f-VE-IGI">
+                                    <rect key="frame" x="290" y="8" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="84k-p8-kXO"/>
+                                        <constraint firstAttribute="width" constant="25" id="IMN-VQ-IeD"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_close_w"/>
+                                    <connections>
+                                        <action selector="btnCloseAction" destination="-1" eventType="touchUpInside" id="fOD-kJ-5sI"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Operator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITc-E9-s8k">
+                                    <rect key="frame" x="115" y="0.0" width="90" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="90" id="CVP-OV-6Zu"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.90588235294117647" green="0.70588235294117641" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="ITc-E9-s8k" firstAttribute="top" secondItem="hku-V2-1Uh" secondAttribute="top" id="22Z-PM-Q7T"/>
+                                <constraint firstItem="ITc-E9-s8k" firstAttribute="centerX" secondItem="hku-V2-1Uh" secondAttribute="centerX" id="6Hb-ag-M6D"/>
+                                <constraint firstAttribute="bottom" secondItem="ITc-E9-s8k" secondAttribute="bottom" id="AAx-m0-pqz"/>
+                                <constraint firstItem="04f-VE-IGI" firstAttribute="centerY" secondItem="hku-V2-1Uh" secondAttribute="centerY" id="N9g-td-ySA"/>
+                                <constraint firstAttribute="height" constant="40" id="Xv9-Vy-evX"/>
+                                <constraint firstAttribute="trailing" secondItem="04f-VE-IGI" secondAttribute="trailing" constant="5" id="smr-uF-4El"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n82-l4-Sc6">
+                            <rect key="frame" x="8" y="40" width="304" height="520"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="mTH-kW-MBc"/>
+                                <outlet property="delegate" destination="-1" id="KPy-FG-XZW"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="hku-V2-1Uh" firstAttribute="leading" secondItem="qEy-3Y-0eZ" secondAttribute="leading" id="9JA-Lj-4FV"/>
+                        <constraint firstAttribute="bottom" secondItem="n82-l4-Sc6" secondAttribute="bottom" constant="8" id="aVh-ua-Wac"/>
+                        <constraint firstItem="n82-l4-Sc6" firstAttribute="top" secondItem="hku-V2-1Uh" secondAttribute="bottom" id="ggI-Q5-KbX"/>
+                        <constraint firstItem="hku-V2-1Uh" firstAttribute="top" secondItem="qEy-3Y-0eZ" secondAttribute="top" id="sIw-LS-nTv"/>
+                        <constraint firstAttribute="trailing" secondItem="n82-l4-Sc6" secondAttribute="trailing" constant="8" id="u2F-j3-akG"/>
+                        <constraint firstAttribute="trailing" secondItem="hku-V2-1Uh" secondAttribute="trailing" id="uAb-BX-iDc"/>
+                        <constraint firstItem="n82-l4-Sc6" firstAttribute="leading" secondItem="qEy-3Y-0eZ" secondAttribute="leading" constant="8" id="zOm-Lz-PL2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qEy-3Y-0eZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LGz-zj-rOU"/>
+                <constraint firstAttribute="trailing" secondItem="qEy-3Y-0eZ" secondAttribute="trailing" id="MDz-nh-ryL"/>
+                <constraint firstItem="qEy-3Y-0eZ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="cRJ-dl-pAK"/>
+                <constraint firstItem="qEy-3Y-0eZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lDE-TJ-RXG"/>
+            </constraints>
+            <point key="canvasLocation" x="33" y="23"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_close_w" width="15" height="15"/>
+    </resources>
+</document>

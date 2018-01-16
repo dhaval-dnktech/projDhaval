@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductHeader" customModule="Cubber" customModuleProvider="target">
+            <connections>
+                <outlet property="lblProductTitle" destination="TIu-So-amg" id="PBw-ox-q0S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNC-VE-UQH">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="lJX-Zl-mDb"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIu-So-amg">
+                    <rect key="frame" x="0.0" y="1" width="600" height="23"/>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRS-aY-tyI">
+                    <rect key="frame" x="0.0" y="24" width="600" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="AFP-nY-h8S"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZRS-aY-tyI" secondAttribute="trailing" id="0sT-WY-7DF"/>
+                <constraint firstAttribute="trailing" secondItem="hNC-VE-UQH" secondAttribute="trailing" id="9Lb-Hr-VRf"/>
+                <constraint firstItem="TIu-So-amg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F4t-no-Bmu"/>
+                <constraint firstItem="hNC-VE-UQH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HyR-Lg-5ol"/>
+                <constraint firstItem="ZRS-aY-tyI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JRL-zT-oAI"/>
+                <constraint firstAttribute="trailing" secondItem="TIu-So-amg" secondAttribute="trailing" id="KQC-JJ-Qu9"/>
+                <constraint firstItem="ZRS-aY-tyI" firstAttribute="top" secondItem="TIu-So-amg" secondAttribute="bottom" id="Zr7-ej-yZy"/>
+                <constraint firstItem="hNC-VE-UQH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="icQ-FS-ZUk"/>
+                <constraint firstItem="TIu-So-amg" firstAttribute="top" secondItem="hNC-VE-UQH" secondAttribute="bottom" id="m5B-sq-FYb"/>
+                <constraint firstAttribute="bottom" secondItem="ZRS-aY-tyI" secondAttribute="bottom" id="okW-OT-2Zg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="112" y="33.5"/>
+        </view>
+    </objects>
+</document>

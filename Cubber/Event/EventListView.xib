@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventListView" customModule="Cubber" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNoEventFound" destination="LFv-jV-hZX" id="i4y-tq-6jv"/>
+                <outlet property="tableViewEvent" destination="G62-0Y-aWy" id="uYN-99-s3P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G62-0Y-aWy">
+                    <rect key="frame" x="8" y="8" width="359" height="651"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cqu-Wm-6Y0"/>
+                        <outlet property="delegate" destination="-1" id="ZZY-iU-IZi"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFv-jV-hZX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="17"/>
+                    <color key="textColor" red="0.23137254900000001" green="0.24313725489999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LFv-jV-hZX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5Pc-bO-juH"/>
+                <constraint firstAttribute="bottom" secondItem="G62-0Y-aWy" secondAttribute="bottom" constant="8" id="9Pd-Um-xgm"/>
+                <constraint firstItem="G62-0Y-aWy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="AvZ-Uy-EUc"/>
+                <constraint firstAttribute="bottom" secondItem="LFv-jV-hZX" secondAttribute="bottom" id="GU6-La-ywb"/>
+                <constraint firstItem="LFv-jV-hZX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IFp-FC-EU3"/>
+                <constraint firstItem="G62-0Y-aWy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="mRe-6y-Mhb"/>
+                <constraint firstAttribute="trailing" secondItem="G62-0Y-aWy" secondAttribute="trailing" constant="8" id="os4-M4-QO1"/>
+                <constraint firstAttribute="trailing" secondItem="LFv-jV-hZX" secondAttribute="trailing" id="uKQ-5X-MVx"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

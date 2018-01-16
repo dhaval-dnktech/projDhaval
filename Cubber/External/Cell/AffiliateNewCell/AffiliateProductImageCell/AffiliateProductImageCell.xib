@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AffiliateProductImageCell" id="gTV-IL-0wX" customClass="AffiliateProductImageCell" customModule="Cubber" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8t-69-bMF">
+                        <rect key="frame" x="5" y="5" width="110" height="110"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gCC-Fu-OIm">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="IPv-bg-OVc">
+                                <rect key="frame" x="45" y="45" width="20" height="20"/>
+                                <color key="color" red="0.92941176469999998" green="0.57254901960000004" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IPv-bg-OVc" firstAttribute="centerX" secondItem="gCC-Fu-OIm" secondAttribute="centerX" id="0E3-Zv-WfF"/>
+                            <constraint firstAttribute="bottom" secondItem="gCC-Fu-OIm" secondAttribute="bottom" id="6C9-HJ-lJc"/>
+                            <constraint firstItem="gCC-Fu-OIm" firstAttribute="top" secondItem="o8t-69-bMF" secondAttribute="top" id="70e-l4-zOZ"/>
+                            <constraint firstAttribute="trailing" secondItem="gCC-Fu-OIm" secondAttribute="trailing" id="DzK-1Y-jZx"/>
+                            <constraint firstItem="IPv-bg-OVc" firstAttribute="centerY" secondItem="gCC-Fu-OIm" secondAttribute="centerY" id="guw-bT-flv"/>
+                            <constraint firstItem="gCC-Fu-OIm" firstAttribute="leading" secondItem="o8t-69-bMF" secondAttribute="leading" id="ks6-gt-g5N"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="o8t-69-bMF" secondAttribute="bottom" constant="5" id="0mg-P6-NLT"/>
+                <constraint firstAttribute="trailing" secondItem="o8t-69-bMF" secondAttribute="trailing" constant="5" id="5Qc-LP-MfY"/>
+                <constraint firstItem="o8t-69-bMF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Nih-eF-CcQ"/>
+                <constraint firstItem="o8t-69-bMF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="ffn-jL-DXO"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicator" destination="IPv-bg-OVc" id="qOV-d9-y2D"/>
+                <outlet property="imageViewProduct" destination="gCC-Fu-OIm" id="KVO-pr-eIY"/>
+                <outlet property="viewBG" destination="o8t-69-bMF" id="nv3-wr-1Wd"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

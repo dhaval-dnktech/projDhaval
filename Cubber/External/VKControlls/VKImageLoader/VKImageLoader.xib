@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VKImageLoader" customModule="Pavitraa" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="2XO-Cm-S8k" id="3W3-ab-kWc"/>
+                <outlet property="imageView" destination="WfN-2H-bxG" id="6wb-AI-NTF"/>
+                <outlet property="scrollView" destination="XN9-Ud-yNs" id="Rgb-Ks-fP9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nHi-da-rvD">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="302"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="20" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XN9-Ud-yNs">
+                    <rect key="frame" x="0.0" y="0.0" width="395" height="302"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WfN-2H-bxG">
+                            <rect key="frame" x="0.0" y="0.0" width="395" height="302"/>
+                        </imageView>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="2XO-Cm-S8k">
+                            <rect key="frame" x="187" y="141" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="2XO-Cm-S8k" firstAttribute="centerY" secondItem="WfN-2H-bxG" secondAttribute="centerY" id="72n-29-xtD"/>
+                        <constraint firstItem="2XO-Cm-S8k" firstAttribute="centerX" secondItem="WfN-2H-bxG" secondAttribute="centerX" id="GPS-yw-OoI"/>
+                        <constraint firstItem="WfN-2H-bxG" firstAttribute="top" secondItem="XN9-Ud-yNs" secondAttribute="top" id="P2Q-mY-qLF"/>
+                        <constraint firstAttribute="bottom" secondItem="WfN-2H-bxG" secondAttribute="bottom" id="YUM-4t-yGA"/>
+                        <constraint firstItem="WfN-2H-bxG" firstAttribute="height" secondItem="XN9-Ud-yNs" secondAttribute="height" id="q8S-1G-pmf"/>
+                        <constraint firstAttribute="trailing" secondItem="WfN-2H-bxG" secondAttribute="trailing" id="rsl-KZ-XAg"/>
+                        <constraint firstItem="WfN-2H-bxG" firstAttribute="leading" secondItem="XN9-Ud-yNs" secondAttribute="leading" id="wRt-1D-bvo"/>
+                        <constraint firstItem="WfN-2H-bxG" firstAttribute="width" secondItem="XN9-Ud-yNs" secondAttribute="width" id="xCX-DM-WHn"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Bz3-w7-wRJ"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XN9-Ud-yNs" secondAttribute="trailing" id="DEv-yv-m8E"/>
+                <constraint firstAttribute="bottom" secondItem="XN9-Ud-yNs" secondAttribute="bottom" id="FVB-9y-FLr"/>
+                <constraint firstItem="XN9-Ud-yNs" firstAttribute="top" secondItem="nHi-da-rvD" secondAttribute="top" id="G1t-1g-FLb"/>
+                <constraint firstItem="XN9-Ud-yNs" firstAttribute="leading" secondItem="nHi-da-rvD" secondAttribute="leading" id="LkZ-2k-aEC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="872" y="-393"/>
+        </view>
+    </objects>
+</document>

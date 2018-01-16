@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeatArrangementView" customModule="Cubber" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSeatSelection" destination="EOh-6w-B6O" id="cLY-AN-n2R"/>
+                <outlet property="imageViewSeat" destination="b9g-nE-aZa" id="7zt-tG-4ca"/>
+                <outlet property="imageViewSleeper_Horizontal" destination="NKI-07-QHr" id="M50-JC-dWf"/>
+                <outlet property="imageViewSleeper_Vertical" destination="N9w-cD-xJ2" id="WCr-dm-v25"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sleeper_selected_h" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-07-QHr">
+                    <rect key="frame" x="5" y="5" width="65" height="65"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sleeper_selected" translatesAutoresizingMaskIntoConstraints="NO" id="N9w-cD-xJ2">
+                    <rect key="frame" x="5" y="5" width="65" height="65"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_seat_selected" translatesAutoresizingMaskIntoConstraints="NO" id="b9g-nE-aZa">
+                    <rect key="frame" x="5" y="5" width="65" height="65"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOh-6w-B6O">
+                    <rect key="frame" x="5" y="5" width="65" height="65"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnSeatAction:" destination="-1" eventType="touchUpInside" id="v57-Db-FxA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="N9w-cD-xJ2" firstAttribute="top" secondItem="NKI-07-QHr" secondAttribute="top" id="0Um-1e-m1W"/>
+                <constraint firstAttribute="trailing" secondItem="EOh-6w-B6O" secondAttribute="trailing" constant="5" id="4CN-Kp-2CO"/>
+                <constraint firstItem="N9w-cD-xJ2" firstAttribute="bottom" secondItem="NKI-07-QHr" secondAttribute="bottom" id="4gC-dm-xAH"/>
+                <constraint firstItem="EOh-6w-B6O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="6id-me-sML"/>
+                <constraint firstItem="b9g-nE-aZa" firstAttribute="top" secondItem="NKI-07-QHr" secondAttribute="top" id="BMe-NY-aRO"/>
+                <constraint firstItem="NKI-07-QHr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Eny-08-uAs"/>
+                <constraint firstItem="NKI-07-QHr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="FJd-wm-ESp"/>
+                <constraint firstAttribute="bottom" secondItem="EOh-6w-B6O" secondAttribute="bottom" constant="5" id="IRK-zv-jqx"/>
+                <constraint firstAttribute="bottom" secondItem="NKI-07-QHr" secondAttribute="bottom" constant="5" id="PO4-tv-agH"/>
+                <constraint firstItem="b9g-nE-aZa" firstAttribute="bottom" secondItem="NKI-07-QHr" secondAttribute="bottom" id="R0g-76-bQa"/>
+                <constraint firstItem="N9w-cD-xJ2" firstAttribute="trailing" secondItem="NKI-07-QHr" secondAttribute="trailing" id="cIp-SG-bWL"/>
+                <constraint firstAttribute="trailing" secondItem="NKI-07-QHr" secondAttribute="trailing" constant="5" id="duA-Rj-mC5"/>
+                <constraint firstItem="N9w-cD-xJ2" firstAttribute="leading" secondItem="NKI-07-QHr" secondAttribute="leading" id="hU0-HN-DLC"/>
+                <constraint firstItem="EOh-6w-B6O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="jcD-ac-OLJ"/>
+                <constraint firstItem="b9g-nE-aZa" firstAttribute="leading" secondItem="NKI-07-QHr" secondAttribute="leading" id="wbB-px-Moh"/>
+                <constraint firstItem="b9g-nE-aZa" firstAttribute="trailing" secondItem="NKI-07-QHr" secondAttribute="trailing" id="xsv-Iv-q1I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-9" y="39"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_seat_selected" width="50" height="50"/>
+        <image name="icon_sleeper_selected" width="50" height="100"/>
+        <image name="icon_sleeper_selected_h" width="100" height="50"/>
+    </resources>
+</document>

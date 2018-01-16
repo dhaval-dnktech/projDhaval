@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TravellorListCell" id="gTV-IL-0wX" customClass="TravellorListCell" customModule="Cubber" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Qn-tf-Cac">
+                        <rect key="frame" x="3" y="3" width="44" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fg-sS-IJu">
+                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.2956896551724138" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Fg-sS-IJu" firstAttribute="top" secondItem="0Qn-tf-Cac" secondAttribute="top" id="0My-GQ-hjo"/>
+                            <constraint firstAttribute="bottom" secondItem="7Fg-sS-IJu" secondAttribute="bottom" id="5lk-fk-RNx"/>
+                            <constraint firstAttribute="trailing" secondItem="7Fg-sS-IJu" secondAttribute="trailing" id="HXL-Bq-UU2"/>
+                            <constraint firstItem="7Fg-sS-IJu" firstAttribute="leading" secondItem="0Qn-tf-Cac" secondAttribute="leading" id="NQw-2F-z2Q"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="0Qn-tf-Cac" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="SdK-kO-EKd"/>
+                <constraint firstItem="0Qn-tf-Cac" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="jgY-xL-cbu"/>
+                <constraint firstAttribute="trailing" secondItem="0Qn-tf-Cac" secondAttribute="trailing" constant="3" id="nYR-iz-rHf"/>
+                <constraint firstAttribute="bottom" secondItem="0Qn-tf-Cac" secondAttribute="bottom" constant="3" id="unu-0r-Ge7"/>
+            </constraints>
+            <connections>
+                <outlet property="lblTravellorTitle" destination="7Fg-sS-IJu" id="GCI-t0-oLZ"/>
+                <outlet property="viewBG" destination="0Qn-tf-Cac" id="vJx-Fp-OjW"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

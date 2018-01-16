@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilterDepartureTimeCell" id="gTV-IL-0wX" customClass="FilterDepartureTimeCell" customModule="Cubber" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzZ-t4-xeb">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsv-VB-t47">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="15"/>
+                                <color key="textColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nsv-VB-t47" secondAttribute="bottom" id="73X-fe-ClZ"/>
+                            <constraint firstItem="nsv-VB-t47" firstAttribute="leading" secondItem="JzZ-t4-xeb" secondAttribute="leading" id="C8K-o2-zAR"/>
+                            <constraint firstItem="nsv-VB-t47" firstAttribute="top" secondItem="JzZ-t4-xeb" secondAttribute="top" id="aFG-BA-lVe"/>
+                            <constraint firstAttribute="trailing" secondItem="nsv-VB-t47" secondAttribute="trailing" id="fqk-1b-jL7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JzZ-t4-xeb" secondAttribute="bottom" id="LB1-6S-xrq"/>
+                <constraint firstItem="JzZ-t4-xeb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="S4a-LX-kYZ"/>
+                <constraint firstItem="JzZ-t4-xeb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qEr-cB-pDX"/>
+                <constraint firstAttribute="trailing" secondItem="JzZ-t4-xeb" secondAttribute="trailing" id="zvU-E1-A7H"/>
+            </constraints>
+            <connections>
+                <outlet property="lblTitle" destination="nsv-VB-t47" id="bxp-CZ-xSs"/>
+                <outlet property="viewBG" destination="JzZ-t4-xeb" id="DWa-bp-LLk"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

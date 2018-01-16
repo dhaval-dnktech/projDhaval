@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="RequestedContactCell" customModule="Cubber" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="462" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKq-bh-5Ek">
+                        <rect key="frame" x="5" y="0.0" width="457" height="54"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user" translatesAutoresizingMaskIntoConstraints="NO" id="NAb-R8-PAn">
+                                <rect key="frame" x="5" y="5" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NAb-R8-PAn" secondAttribute="height" id="Z6C-aI-LPb"/>
+                                    <constraint firstAttribute="width" constant="45" id="yZE-La-gIi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gY5-6w-l3J">
+                                <rect key="frame" x="58" y="5" width="329" height="27"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
+                                <color key="textColor" red="0.2274509804" green="0.24313725489999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsK-gz-hM9">
+                                <rect key="frame" x="58" y="32" width="329" height="17"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.42352941176470588" green="0.42352941176470588" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukh-dt-xbS">
+                                <rect key="frame" x="392" y="12" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.66274509800000003" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="CG1-zz-a6J"/>
+                                    <constraint firstAttribute="height" constant="30" id="le1-NU-9Xs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="15"/>
+                                <state key="normal" title="Select"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnCheckBoxAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ycq-gK-Y09"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ukh-dt-xbS" firstAttribute="centerY" secondItem="wKq-bh-5Ek" secondAttribute="centerY" id="1Gk-rH-Ka4"/>
+                            <constraint firstItem="YsK-gz-hM9" firstAttribute="leading" secondItem="gY5-6w-l3J" secondAttribute="leading" id="5Bm-XV-wMd"/>
+                            <constraint firstItem="ukh-dt-xbS" firstAttribute="leading" secondItem="gY5-6w-l3J" secondAttribute="trailing" constant="5" id="Bow-DK-dN6"/>
+                            <constraint firstAttribute="bottom" secondItem="YsK-gz-hM9" secondAttribute="bottom" constant="5" id="CDx-Ji-AfC"/>
+                            <constraint firstAttribute="trailing" secondItem="ukh-dt-xbS" secondAttribute="trailing" constant="5" id="FhS-DH-B7D"/>
+                            <constraint firstItem="gY5-6w-l3J" firstAttribute="top" secondItem="wKq-bh-5Ek" secondAttribute="top" constant="5" id="Zdu-n4-AkY"/>
+                            <constraint firstItem="NAb-R8-PAn" firstAttribute="leading" secondItem="wKq-bh-5Ek" secondAttribute="leading" constant="5" id="anz-Or-HCM"/>
+                            <constraint firstItem="YsK-gz-hM9" firstAttribute="trailing" secondItem="gY5-6w-l3J" secondAttribute="trailing" id="ePl-ZR-2NN"/>
+                            <constraint firstItem="gY5-6w-l3J" firstAttribute="leading" secondItem="NAb-R8-PAn" secondAttribute="trailing" constant="8" id="f30-hW-y9t"/>
+                            <constraint firstItem="YsK-gz-hM9" firstAttribute="top" secondItem="gY5-6w-l3J" secondAttribute="bottom" id="oNT-G6-qdz"/>
+                            <constraint firstItem="NAb-R8-PAn" firstAttribute="centerY" secondItem="wKq-bh-5Ek" secondAttribute="centerY" id="qXx-k3-OZV"/>
+                            <constraint firstItem="gY5-6w-l3J" firstAttribute="height" secondItem="wKq-bh-5Ek" secondAttribute="height" multiplier="0.5" id="vQu-IW-zsl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="wKq-bh-5Ek" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0Cd-mG-b0k"/>
+                    <constraint firstItem="wKq-bh-5Ek" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="F53-kC-4RH"/>
+                    <constraint firstAttribute="trailing" secondItem="wKq-bh-5Ek" secondAttribute="trailing" id="KBt-qF-dcu"/>
+                    <constraint firstAttribute="bottom" secondItem="wKq-bh-5Ek" secondAttribute="bottom" id="MfT-18-rlz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="btnCheckBox" destination="ukh-dt-xbS" id="Bb6-ky-AcF"/>
+                <outlet property="lblMobileNo" destination="YsK-gz-hM9" id="3wT-5f-Aat"/>
+                <outlet property="lblName" destination="gY5-6w-l3J" id="NGw-4Z-IpN"/>
+            </connections>
+            <point key="canvasLocation" x="28" y="19"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_user" width="79" height="79"/>
+    </resources>
+</document>

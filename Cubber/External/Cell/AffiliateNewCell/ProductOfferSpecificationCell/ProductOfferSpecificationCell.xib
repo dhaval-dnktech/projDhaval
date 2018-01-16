@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductOfferSpecificationCell" rowHeight="44" id="KGk-i7-Jjw" customClass="ProductOfferSpecificationCell" customModule="Cubber" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frf-MJ-Trh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0z-PX-v4H">
+                                <rect key="frame" x="8" y="8" width="10" height="10"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="d0z-PX-v4H" secondAttribute="height" multiplier="1:1" id="R2k-bd-Co6"/>
+                                    <constraint firstAttribute="height" constant="10" id="w74-ML-pYn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWG-yJ-Ry9">
+                                <rect key="frame" x="23" y="0.0" width="292" height="43.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ZP2-Ga-K1B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" red="0.23137254900000001" green="0.24313725489999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rWG-yJ-Ry9" secondAttribute="trailing" constant="5" id="A4R-qO-gBN"/>
+                            <constraint firstItem="d0z-PX-v4H" firstAttribute="leading" secondItem="frf-MJ-Trh" secondAttribute="leading" constant="8" id="Ccd-n7-QSx"/>
+                            <constraint firstItem="rWG-yJ-Ry9" firstAttribute="leading" secondItem="d0z-PX-v4H" secondAttribute="trailing" constant="5" id="Cvw-va-Uji"/>
+                            <constraint firstItem="d0z-PX-v4H" firstAttribute="top" secondItem="frf-MJ-Trh" secondAttribute="top" constant="8" id="GpZ-NB-rMj"/>
+                            <constraint firstAttribute="bottom" secondItem="rWG-yJ-Ry9" secondAttribute="bottom" id="ee0-P9-CM0"/>
+                            <constraint firstItem="rWG-yJ-Ry9" firstAttribute="top" secondItem="frf-MJ-Trh" secondAttribute="top" id="hRF-6m-gFt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="frf-MJ-Trh" secondAttribute="bottom" id="0fG-Mt-IVC"/>
+                    <constraint firstAttribute="trailing" secondItem="frf-MJ-Trh" secondAttribute="trailing" id="2Xx-BM-SWM"/>
+                    <constraint firstItem="frf-MJ-Trh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4Md-ZR-Eet"/>
+                    <constraint firstItem="frf-MJ-Trh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="heY-bt-Jqp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblOfferSpecificationTitle" destination="rWG-yJ-Ry9" id="Fe3-Xk-b15"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="59"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EventBookTimeCell" id="gTV-IL-0wX" customClass="EventBookTimeCell" customModule="Cubber" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMK-8m-ibE">
+                        <rect key="frame" x="5" y="5" width="90" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaE-xh-Iyy">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="35"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
+                                <color key="textColor" red="0.25098039220000001" green="0.66274509800000003" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.25098039220000001" green="0.66274509800000003" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DaE-xh-Iyy" firstAttribute="top" secondItem="lMK-8m-ibE" secondAttribute="top" id="6IE-TF-MQe"/>
+                            <constraint firstAttribute="bottom" secondItem="DaE-xh-Iyy" secondAttribute="bottom" id="NBm-Mi-FwA"/>
+                            <constraint firstItem="DaE-xh-Iyy" firstAttribute="leading" secondItem="lMK-8m-ibE" secondAttribute="leading" id="nPs-jX-9CN"/>
+                            <constraint firstAttribute="trailing" secondItem="DaE-xh-Iyy" secondAttribute="trailing" id="qII-hI-ebA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lMK-8m-ibE" secondAttribute="bottom" constant="5" id="3Vg-Jf-mDb"/>
+                <constraint firstItem="lMK-8m-ibE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="753-QW-fXs"/>
+                <constraint firstItem="lMK-8m-ibE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="TOg-q0-5Ow"/>
+                <constraint firstAttribute="trailing" secondItem="lMK-8m-ibE" secondAttribute="trailing" constant="5" id="pev-sU-Rly"/>
+            </constraints>
+            <connections>
+                <outlet property="lblTime" destination="DaE-xh-Iyy" id="Ghx-by-DQc"/>
+            </connections>
+            <point key="canvasLocation" x="48" y="140.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

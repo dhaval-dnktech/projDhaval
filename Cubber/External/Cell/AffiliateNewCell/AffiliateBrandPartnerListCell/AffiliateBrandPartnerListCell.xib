@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AffiliateBrandPartnerListCell" id="KGk-i7-Jjw" customClass="AffiliateBrandPartnerListCell" customModule="Cubber" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIW-jt-1zd">
+                        <rect key="frame" x="3" y="3" width="314" height="37.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzl-iT-x00">
+                                <rect key="frame" x="279" y="0.0" width="35" height="37.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="1Py-O2-dlb"/>
+                                </constraints>
+                                <state key="normal" image="icon_unchecked_box"/>
+                                <state key="selected" image="icon_checked_box"/>
+                                <connections>
+                                    <action selector="btnCheckBoxAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HjV-C9-2kS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt1-uB-AYm">
+                                <rect key="frame" x="0.0" y="0.0" width="276" height="37.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wt1-uB-AYm" firstAttribute="leading" secondItem="xIW-jt-1zd" secondAttribute="leading" id="2qu-bE-4RK"/>
+                            <constraint firstItem="nzl-iT-x00" firstAttribute="leading" secondItem="wt1-uB-AYm" secondAttribute="trailing" constant="3" id="5T8-W9-OI2"/>
+                            <constraint firstItem="nzl-iT-x00" firstAttribute="top" secondItem="xIW-jt-1zd" secondAttribute="top" id="9SW-Iu-IK1"/>
+                            <constraint firstAttribute="bottom" secondItem="nzl-iT-x00" secondAttribute="bottom" id="CBv-ib-qRT"/>
+                            <constraint firstItem="wt1-uB-AYm" firstAttribute="top" secondItem="xIW-jt-1zd" secondAttribute="top" id="IJG-fH-R3N"/>
+                            <constraint firstAttribute="bottom" secondItem="wt1-uB-AYm" secondAttribute="bottom" id="kDN-8y-GNA"/>
+                            <constraint firstAttribute="trailing" secondItem="nzl-iT-x00" secondAttribute="trailing" id="zd7-nU-DXq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xIW-jt-1zd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="649-j3-bAz"/>
+                    <constraint firstItem="xIW-jt-1zd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="TDJ-S5-A5c"/>
+                    <constraint firstAttribute="trailing" secondItem="xIW-jt-1zd" secondAttribute="trailing" constant="3" id="gj3-4H-t8X"/>
+                    <constraint firstAttribute="bottom" secondItem="xIW-jt-1zd" secondAttribute="bottom" constant="3" id="ojh-O2-u67"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnCheckBox" destination="nzl-iT-x00" id="ehO-mw-Kxi"/>
+                <outlet property="lblTitle" destination="wt1-uB-AYm" id="DJ1-tV-taQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_checked_box" width="20" height="20"/>
+        <image name="icon_unchecked_box" width="20" height="20"/>
+    </resources>
+</document>
